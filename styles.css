@@ -30,3 +30,34 @@ input[type="password"] {
   border-radius: 8px;
   border: 1px solid #666666;
 }
+.form-group-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 16px;
+  font-size: 16px;
+  height: 24px;
+  margin-left: 0;
+}
+#remember {
+  position: relative;
+}
+#remember::after {
+  content: "";
+  height: 24px;
+  width: 24px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  border-radius: 8px;
+  background: #ffffff;
+}
+#remember:checked::after {
+  background-image: url("/form-sample-template/images/tick.svg");
+  background-size: cover; /* Resize to fill the box */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-size: 18px 14px;
+}
