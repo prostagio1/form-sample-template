@@ -34,6 +34,7 @@ input[type="password"] {
   border-radius: 8px;
   border: 1px solid #666666;
 }
+
 .form-group-1 {
   display: flex;
   flex-direction: row;
@@ -192,4 +193,29 @@ input:checked + .slider::before {
   background-image: URL("/form-sample-template/images/arrow-upside.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.buttons button {
+  width: 172px;
+  height: 56px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cancel {
+  background-color: #ffffff;
+  border: 1px solid #7a5cfa;
+  color: #7a5cfa;
+}
+.next {
+  background-color: #7a5cfa;
+  color: white;
+  border: none;
 }
