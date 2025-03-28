@@ -26,6 +26,10 @@ form {
 }
 input[type="text"],
 input[type="password"] {
+  padding: 10px;
+}
+input[type="text"],
+input[type="password"] {
   height: 56px;
   border-radius: 8px;
   border: 1px solid #666666;
@@ -117,4 +121,42 @@ input:checked + .slider::before {
   column-gap: 16px;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+}
+
+.radio-button {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+}
+.custom-radio {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+#radio-1,
+#radio-2,
+#radio-3 {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.form-radio input[type="radio"]:checked + .custom-radio::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: #7a5cfa;
+  border-radius: 50%;
 }
